@@ -16,10 +16,8 @@ import {
   MultiProvider,
   RouterConfig,
   chainMetadata,
-  objMap,
-  objMerge,
 } from '@hyperlane-xyz/sdk';
-import { types } from '@hyperlane-xyz/utils';
+import { Address, objMap, objMerge } from '@hyperlane-xyz/utils';
 
 import { warpRouteConfig } from '../../config/warp_tokens';
 import {
@@ -52,7 +50,7 @@ export async function getArgs(multiProvider: MultiProvider) {
 }
 
 export type WarpRouteArtifacts = {
-  router: types.Address;
+  router: Address;
   tokenType: TokenType;
 };
 
